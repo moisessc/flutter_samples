@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.528" height="20.032" viewBox="0 0 17.528 20.032">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6ee2f5"/>
+      <stop offset="1" stop-color="#6454f0"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag" d="M13.772,6.26V5.008a5.008,5.008,0,1,0-10.016,0V6.26H0V16.9a3.13,3.13,0,0,0,3.13,3.13H14.4a3.13,3.13,0,0,0,3.13-3.13V6.26ZM6.26,5.008a2.5,2.5,0,1,1,5.008,0V6.26H6.26ZM12.52,9.7a.939.939,0,1,1,.939-.939A.939.939,0,0,1,12.52,9.7Zm-7.512,0a.939.939,0,1,1,.939-.939A.939.939,0,0,1,5.008,9.7Z" fill="url(#linear-gradient)"/>
+</svg>

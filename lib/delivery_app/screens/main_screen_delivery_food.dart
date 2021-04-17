@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_samples/utils/responsive.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:provider/provider.dart';
 
 import '../core/colors.dart';
-import '../data/category_state.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/main_screen/custom_circle.dart';
 import '../widgets/main_screen/list_view_categories.dart';
@@ -12,14 +10,30 @@ import '../widgets/main_screen/list_view_popular_food.dart';
 import '../widgets/main_screen/main_header.dart';
 import '../widgets/main_screen/section_text.dart';
 
-class MainScreenDeliveryFood extends StatefulWidget {
+class MainScreenDeliveryFood extends StatelessWidget {
   const MainScreenDeliveryFood({Key? key}) : super(key: key);
 
   @override
-  _MainScreenDeliveryFoodState createState() => _MainScreenDeliveryFoodState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.black,
+      ),
+      home: const _HomeScreen(),
+    );
+  }
 }
 
-class _MainScreenDeliveryFoodState extends State<MainScreenDeliveryFood>
+class _HomeScreen extends StatefulWidget {
+  const _HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  __HomeScreenState createState() => __HomeScreenState();
+}
+
+class __HomeScreenState extends State<_HomeScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _animationAvatar;
@@ -85,87 +99,81 @@ class _MainScreenDeliveryFoodState extends State<MainScreenDeliveryFood>
     const menuIcon = 'assets/delivery_app/icons/menu.svg';
     final responsive = Responsive.of(context);
 
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => CategoryState()),
-      ],
-      child: Scaffold(
-        backgroundColor: kWhite,
-        resizeToAvoidBottomInset: false,
-        body: SafeArea(
-          bottom: false,
-          child: AnimatedBuilder(
-            animation: _animationController,
-            builder: (_, __) {
-              return Stack(
-                children: [
-                  Transform.scale(
-                    alignment: Alignment.center,
-                    scale: _animationCircle.value,
-                    origin: Offset(
-                      -responsive.width * 0.3,
-                      -responsive.height * 0.3,
-                    ),
-                    child: const CustomCircle(),
+    return Scaffold(
+      backgroundColor: kWhite,
+      resizeToAvoidBottomInset: false,
+      body: SafeArea(
+        bottom: false,
+        child: AnimatedBuilder(
+          animation: _animationController,
+          builder: (_, __) {
+            return Stack(
+              children: [
+                Transform.scale(
+                  alignment: Alignment.center,
+                  scale: _animationCircle.value,
+                  origin: Offset(
+                    -responsive.width * 0.3,
+                    -responsive.height * 0.3,
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomAppBar(
-                        itemLeft: Transform.scale(
-                          scale: _animationAvatar.value,
-                          child: IconButtonTabBar(
-                            icon: const CircleAvatar(
-                              backgroundColor: kWhite,
-                              backgroundImage: AssetImage(profileImage),
-                              radius: 25,
-                            ),
-                            backgroundColor: Colors.transparent,
-                            callback: () => debugPrint('Avatar'),
+                  child: const CustomCircle(),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CustomAppBar(
+                      itemLeft: Transform.scale(
+                        scale: _animationAvatar.value,
+                        child: IconButtonTabBar(
+                          icon: const CircleAvatar(
+                            backgroundColor: kWhite,
+                            backgroundImage: AssetImage(profileImage),
+                            radius: 25,
                           ),
-                        ),
-                        itemRight: Transform.scale(
-                          scale: _animationMenuAndText.value,
-                          child: IconButtonTabBar(
-                            icon: SvgPicture.asset(
-                              menuIcon,
-                              alignment: Alignment.center,
-                              height: responsive.heightPercent(3.5),
-                              width: responsive.heightPercent(3.5),
-                            ),
-                            backgroundColor: Colors.transparent,
-                            callback: () => debugPrint('menu'),
-                          ),
+                          backgroundColor: Colors.transparent,
+                          callback: () => debugPrint('Avatar'),
                         ),
                       ),
-                      const SizedBox(height: 15),
-                      GestureDetector(
-                        onTap: () => _animationController.forward(from: 0.0),
-                        child: MainHeader(
-                          animationMenuAndText: _animationMenuAndText,
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      Transform.scale(
+                      itemRight: Transform.scale(
                         scale: _animationMenuAndText.value,
-                        child: const SectionText(text: 'Categories'),
+                        child: IconButtonTabBar(
+                          icon: SvgPicture.asset(
+                            menuIcon,
+                            alignment: Alignment.center,
+                            height: responsive.heightPercent(3.5),
+                            width: responsive.heightPercent(3.5),
+                          ),
+                          backgroundColor: Colors.transparent,
+                          callback: () => debugPrint('menu'),
+                        ),
                       ),
-                      ListViewCategories(
-                          animationHandler: _animationController),
-                      const SizedBox(height: 10.0),
-                      Transform.scale(
-                        scale: _animationPopularText.value,
-                        child: const SectionText(text: 'Popular'),
+                    ),
+                    const SizedBox(height: 15),
+                    GestureDetector(
+                      onTap: () => _animationController.forward(from: 0.0),
+                      child: MainHeader(
+                        animationMenuAndText: _animationMenuAndText,
                       ),
-                      ListViewPopularFood(
-                        animationController: _animationController,
-                      ),
-                    ],
-                  ),
-                ],
-              );
-            },
-          ),
+                    ),
+                    const SizedBox(height: 20),
+                    Transform.scale(
+                      scale: _animationMenuAndText.value,
+                      child: const SectionText(text: 'Categories'),
+                    ),
+                    ListViewCategories(animationHandler: _animationController),
+                    const SizedBox(height: 10.0),
+                    Transform.scale(
+                      scale: _animationPopularText.value,
+                      child: const SectionText(text: 'Popular'),
+                    ),
+                    ListViewPopularFood(
+                      animationController: _animationController,
+                    ),
+                  ],
+                ),
+              ],
+            );
+          },
         ),
       ),
     );

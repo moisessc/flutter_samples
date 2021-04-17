@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   auto_size_text: ^3.0.0-nullsafety.0
+  dotted_border: ^2.0.0-nullsafety.0
   flutter_svg: ^0.21.0-nullsafety.0
   font_awesome_flutter: ^9.0.0
   provider: ^5.0.0
@@ -51,25 +52,32 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/common/images/
     - assets/delivery_app/icons/
     - assets/delivery_app/images/
+    - assets/facebook_ui/icons/
+    - assets/facebook_ui/images/
+    - assets/facebook_ui/images/collections/
+    - assets/facebook_ui/images/people/
+    - assets/facebook_ui/images/profile/
+    - assets/facebook_ui/images/stories/
 
   # example:
   fonts:
     - family: Lexend
       fonts: 
-        - asset: assets/delivery_app/fonts/Lexend/Lexend-Bold.ttf
+        - asset: assets/common/fonts/Lexend/Lexend-Bold.ttf
           weight: 700
-        - asset: assets/delivery_app/fonts/Lexend/Lexend-Light.ttf
-        - asset: assets/delivery_app/fonts/Lexend/Lexend-Medium.ttf
-        - asset: assets/delivery_app/fonts/Lexend/Lexend-Regular.ttf
-        - asset: assets/delivery_app/fonts/Lexend/Lexend-SemiBold.ttf
+        - asset: assets/common/fonts/Lexend/Lexend-Light.ttf
+        - asset: assets/common/fonts/Lexend/Lexend-Medium.ttf
+        - asset: assets/common/fonts/Lexend/Lexend-Regular.ttf
+        - asset: assets/common/fonts/Lexend/Lexend-SemiBold.ttf
 
     - family: Mulish
       fonts: 
-        - asset: assets/delivery_app/fonts/Mulish/Mulish-Bold.ttf
+        - asset: assets/common/fonts/Mulish/Mulish-Bold.ttf
           weight: 700
-        - asset: assets/delivery_app/fonts/Mulish/Mulish-Light.ttf
-        - asset: assets/delivery_app/fonts/Mulish/Mulish-Medium.ttf
-        - asset: assets/delivery_app/fonts/Mulish/Mulish-Regular.ttf
-        - asset: assets/delivery_app/fonts/Mulish/Mulish-SemiBold.ttf
+        - asset: assets/common/fonts/Mulish/Mulish-Light.ttf
+        - asset: assets/common/fonts/Mulish/Mulish-Medium.ttf
+        - asset: assets/common/fonts/Mulish/Mulish-Regular.ttf
+        - asset: assets/common/fonts/Mulish/Mulish-SemiBold.ttf

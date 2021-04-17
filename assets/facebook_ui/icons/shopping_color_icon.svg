@@ -1,0 +1,11 @@
+<svg id="trolley" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.612" height="22.176" viewBox="0 0 26.612 22.176">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.13" y1="-0.398" x2="0.705" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28f29c"/>
+      <stop offset="1" stop-color="#0cb8e0"/>
+    </linearGradient>
+  </defs>
+  <path id="Trazado_25" data-name="Trazado 25" d="M21.168,20.632H11.2a3.223,3.223,0,0,1-3.1-2.3L4.722,6.915a1,1,0,0,0-.972-.7H1.109A1.109,1.109,0,1,1,1.109,4H3.75a3.222,3.222,0,0,1,3.1,2.3l.631,2.14H24.441a2.186,2.186,0,0,1,1.755.881,2.1,2.1,0,0,1,.319,1.881l-2.287,7.26a3.218,3.218,0,0,1-3.06,2.174Zm3.274-9.979h.011Z" transform="translate(0 -4)" fill="url(#linear-gradient)"/>
+  <path id="Trazado_26" data-name="Trazado 26" d="M11.218,24.435a2.218,2.218,0,1,1,2.218-2.218A2.22,2.22,0,0,1,11.218,24.435Zm0-2.219h0Z" transform="translate(0.979 -2.259)" fill="url(#linear-gradient)"/>
+  <path id="Trazado_27" data-name="Trazado 27" d="M18.218,24.435a2.218,2.218,0,1,1,2.218-2.218A2.22,2.22,0,0,1,18.218,24.435Zm0-2.219h0Z" transform="translate(1.741 -2.259)" fill="url(#linear-gradient)"/>
+</svg>

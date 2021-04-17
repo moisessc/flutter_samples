@@ -1,0 +1,10 @@
+<svg id="back-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.899" height="12.899" viewBox="0 0 12.899 12.899">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28f29c"/>
+      <stop offset="1" stop-color="#0cb8e0"/>
+    </linearGradient>
+  </defs>
+  <path id="Trazado_31" data-name="Trazado 31" d="M235.205,106.668a.537.537,0,0,0-.537.537v3.225a.537.537,0,0,0,.537.537h3.225a.537.537,0,1,0,0-1.075h-2.687v-2.687A.537.537,0,0,0,235.205,106.668Zm0,0" transform="translate(-228.756 -103.981)" fill="url(#linear-gradient)"/>
+  <path id="Trazado_32" data-name="Trazado 32" d="M6.45,0A6.818,6.818,0,0,0,1.855,1.823L.688.656A.4.4,0,0,0,0,.941V4.434a.4.4,0,0,0,.4.4H3.9a.4.4,0,0,0,.285-.688L2.62,2.587A5.72,5.72,0,0,1,6.45,1.075a5.375,5.375,0,1,1,0,10.749,5.32,5.32,0,0,1-3.8-1.576.538.538,0,0,0-.762.759A6.388,6.388,0,0,0,6.45,12.9,6.45,6.45,0,0,0,6.45,0Zm0,0" fill="url(#linear-gradient)"/>
+</svg>
