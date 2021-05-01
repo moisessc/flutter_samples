@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../data/local_providers.dart';
 import '../theme/theme_state.dart';
-import '../widgets/bottom_menu_bar.dart';
+import '../widgets/navigation_bar.dart';
 import './home_screen.dart';
 import './settings_screen.dart';
 
@@ -31,7 +31,7 @@ class ScreenController extends StatelessWidget {
                 const SettingsScreen(),
               ],
             ),
-            BottomMenuBar(
+            NavigationBar(
               showBar: bottomBarState.showBottomBar,
               selectedIndex: screensState.page,
             ),

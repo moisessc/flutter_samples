@@ -12,8 +12,8 @@ const _duration = Duration(milliseconds: 400);
 const double _bottomBarHide = -100.0;
 const double _bottomBarShow = 0.0;
 
-class BottomMenuBar extends StatelessWidget {
-  const BottomMenuBar({
+class NavigationBar extends StatelessWidget {
+  const NavigationBar({
     Key? key,
     this.showBar = true,
     required this.selectedIndex,
