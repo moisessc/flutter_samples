@@ -16,9 +16,9 @@ This project contains some sample applications created with Flutter, mainly clon
 1. If you don't have Flutter, you can find information for install it here! **[Install Flutter](https://flutter.dev/docs/get-started/install)** 👈 👈
 2. Open your terminal and clone this repository in your computer with this command: ```git clone https://github.com/moisessc/flutter_samples.git```
 3. Now go to the cloned repository folder with: ```cd flutter_samples``` 
-4. At this moment, all the code is in the develop branch, you should position yourself in that branch with the following command: ```git checkout develop ```
-5. It's time to get all the dependencies, you can do it typing in your terminal: ```flutter pub get```
-6. Make sure your device or emulator is initialized and execute this command: ```flutter run``` and enjoy the samples 🙌
+
+4. It's time to get all the dependencies, you can do it typing in your terminal: ```flutter pub get```
+5. Make sure your device or emulator is initialized and execute this command: ```flutter run``` and enjoy the samples 🙌
 
 ---
 
@@ -27,7 +27,7 @@ This project contains some sample applications created with Flutter, mainly clon
 ### **Delivery App :pizza:**
 | **Principal screen** | **Details Screen** |
 | --- | --- |
-| ![Delivery App](https://i.ibb.co/NK7Xfs3/deliberyapp1.gif) | ![Delivery App Details](https://i.ibb.co/3ssMyDt/deliveryapp2.gif) |
+| ![Delivery App](https://i.ibb.co/7pSMcYY/deliberyapp1.gif) | ![Delivery App Details](https://i.ibb.co/LkXw3CZ/deliveryapp2.gif) |
 
 | **Package in the project** | **Design** |
 | --- | --- |
@@ -35,16 +35,16 @@ This project contains some sample applications created with Flutter, mainly clon
 
 ---
 
-### **Facebook Redesign by Mao Lop**
+### **Facebook Redesign by Mao Lop :eyes:**
 ### Light Mode :sunny:
 | **Home screen** | **Profile screen** | **Settings screen** |
 | --- | --- | --- |
-|![Home](https://i.ibb.co/GC5Wqbt/home.gif)|![Profile](https://i.ibb.co/BfJ74qv/profile.gif)|![Settings](https://i.ibb.co/3rtK5tt/settings.gif)|
+|![Home](https://i.ibb.co/jLPMwv4/home.gif)|![Profile](https://i.ibb.co/J2Tr3w0/profile.gif)|![Settings](https://i.ibb.co/3rtK5tt/settings.gif)|
 
 ### Dark mode :new_moon:
 | **Home screen** | **Profile screen** | **Settings screen** |
 | --- | --- | --- |
-|![Home Dark](https://i.ibb.co/6FTDT1f/homedarkmode.gif)|![Profile Dark](https://i.ibb.co/C9kDFzG/profiledarkmode.gif)|![Settings Dark](https://i.ibb.co/b2VJPJ1/settingsdarkmode.gif)|
+|![Home Dark](https://i.ibb.co/sJ6bx46/homedarkmode.gif)|![Profile Dark](https://i.ibb.co/tKsT35R/profiledarkmode.gif)|![Settings Dark](https://i.ibb.co/b2VJPJ1/settingsdarkmode.gif)|
 
 
 | **Package in the project** | **Design** |
