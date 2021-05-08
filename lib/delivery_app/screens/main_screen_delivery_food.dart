@@ -95,7 +95,7 @@ class __HomeScreenState extends State<_HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    const profileImage = 'assets/delivery_app/images/profile_image.jpg';
+    const profileImage = 'assets/common/images/profile_image.jpg';
     const menuIcon = 'assets/delivery_app/icons/menu.svg';
     final responsive = Responsive.of(context);
 

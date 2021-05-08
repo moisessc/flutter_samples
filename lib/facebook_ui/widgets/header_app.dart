@@ -238,8 +238,8 @@ class _PostBar extends StatelessWidget {
         ),
         ClipOval(
           child: Container(
-            height: responsive.widthPercent(4.5),
-            width: responsive.heightPercent(4.5),
+            height: responsive.widthPercent(5),
+            width: responsive.widthPercent(5),
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
