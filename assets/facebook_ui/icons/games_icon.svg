@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.004" height="19.004" viewBox="0 0 19.004 19.004">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffcf1b"/>
+      <stop offset="1" stop-color="#ff881b"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-games" data-name="Icon material-games" d="M15.352,8.226V3h-5.7V8.226L12.5,11.077ZM8.226,9.651H3v5.7H8.226L11.077,12.5Zm1.425,7.126V22h5.7V16.778L12.5,13.927Zm7.126-7.126L13.927,12.5l2.851,2.851H22v-5.7Z" transform="translate(-3 -3)" fill="url(#linear-gradient)"/>
+</svg>
